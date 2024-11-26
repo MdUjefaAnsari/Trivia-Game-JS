@@ -230,7 +230,7 @@ const renderWinner = (score) => {
       : "It's a Tie!";
 
   document.getElementById("winnerText").textContent =
-    winner === "It's a Tie!" ? "It's a Tie!" : `Congratulations, ${winner}!`;
+    winner === "It's a Tie!" ? "It's a Tie! 🤝" : `🎉 Congratulations, ${winner}! 🏆`;
   document.getElementById("scoreSummaryPlayer1").textContent = `${player1}: ${score.player1} points`;
   document.getElementById("scoreSummaryPlayer2").textContent = `${player2}: ${score.player2} points`;
 
