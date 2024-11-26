@@ -1,0 +1,157 @@
+* {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: rgb(229, 255, 224);
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+
+/* <!-- home templates start --> */
+.homeHeading{
+ font-size: 33px;
+ box-shadow:  4px 8px 8px 4px rgb(105, 180, 0);
+ background: rgb(126, 216, 0);
+ color: white;
+ outline: 3.1px solid rgb(255, 255, 255);
+ border-radius: 100px 0px;
+}
+.subHead{
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+button{
+  padding: 12px 28px;
+  outline: 1.7px solid rgb(166, 255, 0);
+  border: none;
+  box-shadow:  2px 4px 4px 2px rgb(105, 180, 0);
+  border-radius: 17px 17px;
+  cursor: pointer;
+  background: white;
+  color: rgb(126, 216, 0);
+  font-size: 15px;
+  font-weight: bolder;
+  margin: 5px 10px;
+  transition: all 0.3s ease-in ;
+}
+button:hover{
+  color: rgb(255, 255, 255);
+  outline: 1.7px solid rgb(255, 255, 255);
+  background: rgb(126, 216, 0);
+}
+/* <!-- home templates end --> */
+
+
+/* input templates start  */
+.inputHeading{
+  font-size: 33px;
+  box-shadow:  4px 8px 8px 4px rgb(105, 180, 0);
+  background: rgb(126, 216, 0);
+  color: white;
+  outline: 3.1px solid rgb(255, 255, 255);
+  border-radius: 100px 0px;
+}
+input{
+  border-radius: 17px 17px;
+  padding: 9px 20px;
+  margin: 10px;
+  width: 170px;
+  border: none;
+  outline: 1.7px solid rgb(126, 216, 0);
+  background: white;
+  color: rgb(126, 216, 0);
+  font-weight: bolder;
+  box-shadow:  2px 4px 4px 2px rgb(105, 180, 0);
+  transition: all 0.4s ease-in-out;
+}
+input:hover{
+  color: rgb(255, 255, 255);
+  outline: 1.7px solid rgb(255, 255, 255);
+  background: rgb(126, 216, 0);
+}
+label{
+  font-size: large;
+}
+.error-text{
+  color: red;
+  margin: 0;
+  padding: 0;
+}
+.categoryHeading{
+  font-size: 33px;
+  box-shadow:  4px 8px 8px 4px rgb(105, 180, 0);
+  background: rgb(126, 216, 0);
+  color: white;
+  outline: 3.1px solid rgb(255, 255, 255);
+  border-radius: 100px 0px;
+}
+/* input templates end  */
+
+/* <!-- game play and score templates start --> */
+#players{
+  font-size: 33px;
+  box-shadow:  4px 8px 8px 4px rgb(105, 180, 0);
+  background: rgb(126, 216, 0);
+  color: white;
+  outline: 3.1px solid rgb(255, 255, 255);
+  border-radius: 100px 0px; 
+  font-family: sans-serif;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.score-board{
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+}
+.player12{
+  font-weight: 200px;
+  margin: 4px 100px;
+  text-align: center;
+  font-size: 23px;
+  padding: 4px auto;
+  text-transform: uppercase;
+  box-shadow: 4px 8px 8px 4px rgb(105, 180, 0);
+  background: linear-gradient(rgb(20, 19, 19),rgb(0, 0, 0),rgb(58, 58, 58));
+  color: white;
+  outline: 3px solid rgb(255, 255, 255);
+  border-radius: 1px 10px;
+}
+.catdift{
+  font-size: 20px;
+  font-weight: 500;
+  font-family: monospace;
+  color: rgb(2, 73, 33);
+  box-shadow: inset -12px 2px 12px -2px rgb(77, 255, 77);
+  padding: 4px;
+  margin: 20px 150px;
+  border-radius: 10px 10px;
+  text-transform: capitalize;
+  
+}
+/* <!-- game play and score templates end --> */
+
+/* winner display start */
+#winnerText{
+  color: rgb(0, 0, 0);
+}
+
+.scoreP12{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  border-radius: 10px 0px; 
+  font-family: sans-serif;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+/* winner display end */

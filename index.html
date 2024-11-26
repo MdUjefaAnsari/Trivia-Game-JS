@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app" class="container"></div>
+  <div class="templates">
+    <!-- Templates -->
+   
+    <!-- home templates start -->
+    <template id="home-template" class="home-template">
+      <h1 class="homeHeading">Welcome to Trivia Game Challenge!</h1>
+      <p class="subHead">Test your knowledge and have fun!</p>
+      <button id="startGameBtn">Start Game</button>
+    </template>
+    <!-- home templates end -->
+
+
+<!-- input templates start -->
+    <template id="player-input-template">
+      <h1 class="inputHeading">Enter Player Names To Play (:</h1>
+      <div>
+        <label>Player 1: <input type="text" id="player1Name" placeholder="Enter Player 1 Name"></label>
+        <p id="player1Error" class="error-text"></p>
+      </div>
+      <div>
+        <label>Player 2: <input type="text" id="player2Name" placeholder="Enter Player 2 Name"></label>
+        <p id="player2Error" class="error-text"></p>
+      </div>
+      <button id="startCategorySelectionBtn">Start Game</button>
+      <button id="cancelGameBtn">Cancel</button>
+    </template>
+<!-- input templates start -->
+ <!-- select category template start  -->
+ <template id="category-selection-template">
+  <h1 class="categoryHeading">Select a Category</h1>
+  <div id="categoryList" class="categoryList"></div>
+</template>
+<!-- select category template end -->
+   
+<!-- game play and score templates start -->
+    <template id="gameplay-template">
+      <h3 id="players"></h3>
+      <div class="score-board">
+        <p id="scorePlayer1" class="player12"></p>
+        <p id="scorePlayer2" class="player12"></p>
+      </div>
+      <div class="turncatdif"> 
+      <h4 id="category" class="catdift"></h4>
+      <h4 id="difficulty" class="catdift"></h4>
+     </div>
+     <h4 id="turn" class="catdift"></h4>
+      <div>
+        <h2 id="question">Question:</h2>
+        <div id="answerOptions" class="answer-options"></div>
+      </div>
+    </template>
+    <!-- game play and score templates end -->
+
+    <!-- winner templates start  -->
+    <template id="winner-template">
+      <div class="winner-section">
+        <h2 id="winnerText"></h2>
+        <p id="scoreSummaryPlayer1" class="scoreP12"></p>
+        <p id="scoreSummaryPlayer2" class="scoreP12"></p>
+        <button id="playAgainBtn">Play Again</button>
+      </div>
+    </template>
+      <!-- winner templates end  -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
