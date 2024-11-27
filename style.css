@@ -12,6 +12,7 @@
   max-width: 800px;
   padding: 20px;
   border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px 2px rgb(61, 83, 67);
   border-radius: 10px;
 }
 
