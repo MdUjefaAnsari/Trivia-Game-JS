@@ -6,7 +6,9 @@
   text-align: center;
   background-color: rgb(229, 255, 224);
 }
-
+.answeredByPlayers{
+  color: red;
+}
 .container {
   margin: 20px auto;
   max-width: 800px;
@@ -158,3 +160,6 @@ label{
   padding: 17px 0px;
 }
 /* winner display end */
+
+
+

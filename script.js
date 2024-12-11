@@ -147,7 +147,7 @@ const renderGamePlay = async () => {
 
     renderTemplate("gameplay-template");
 
-    document.getElementById("players").textContent = `${player1} VS ${player2}`;
+    document.getElementById("players").textContent = `${player1} ⚔️ ${player2}`;
     document.getElementById("scorePlayer1").textContent = `${player1}: ${score.player1} points`;
     document.getElementById("scorePlayer2").textContent = `${player2}: ${score.player2} points`;
     document.getElementById("turn").textContent = `Turn: ${currentPlayer}`;
@@ -171,9 +171,12 @@ const renderGamePlay = async () => {
 
     if (isCorrect) {
       score[currentPlayerKey] += points[difficulty];
-      alert(`${currentPlayerKey === "player1" ? player1 : player2} answered correctly!`);
+      alert(`${currentPlayerKey === "player1" ? player1 : player2} answered correct! ✅`);
+      
+    
     } else {
-      alert("Wrong answer!");
+      alert(`Wrong answer! ❌`);
+
     }
 
     currentQuestionIndex++;
