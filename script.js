@@ -1,9 +1,9 @@
 // Global state variables
-let currentScreen = "home"; // Tracks the current screen the user is on (home, player input, etc.)
+let currentScreen = "home"; // Tracks the current screen the user is on (home, player input.)
 const app = document.getElementById("app"); // Reference to the main app container in the HTML
 let selectedCategory = null; // Tracks the selected trivia category
-let player1 = ""; // Player 1's name
-let player2 = ""; // Player 2's name
+let player1 = ""; // Player One name
+let player2 = ""; // Player Two name
 let score = { player1: 0, player2: 0 }; // Tracks scores for both players
 let usedCategories = new Set(); // Tracks categories that have been used to avoid repetition
 let count = 1; // Keeps track of question count
@@ -228,7 +228,7 @@ const renderPostQuestionOptions = async () => {
 const renderWinner = (score) => {
   renderTemplate("winner-template"); // Render the winner template
 
-  // Determine the winner or if it's a tie
+  // show the winner or if it's a tie
   const winner =
     score.player1 > score.player2
       ? player1
@@ -250,14 +250,14 @@ const renderWinner = (score) => {
 
 // Reset the game state to its initial values
 const resetGameState = () => {
-  currentScreen = "home"; // Reset to home screen
+  currentScreen = "home"; //this will  Reset to home screen
   selectedCategory = null;
   player1 = "";
   player2 = "";
-  score = { player1: 0, player2: 0 }; // Reset scores
-  usedCategories = new Set(); // Clear used categories
-  currentQuestionIndex = 0; // Reset question index
-  count = 1; // Reset question count
+  score = { player1: 0, player2: 0 }; //this will Reset scores
+  usedCategories = new Set(); // this will Clear used categories
+  currentQuestionIndex = 0; //this will Reset question index
+  count = 1; //this will Reset question count
 };
 
 // Initialize the game by rendering the home screen
